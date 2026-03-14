@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Website SSB</title>
+
+<link rel="stylesheet" href="./dist/output.css">
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<body class="bg-gray-100 text-[#7A1C1C] scroll-smooth">
+
+<nav class="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur">
+
+<div class="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
+
+<!-- LEFT SIDE (LOGO + MENU) -->
+<div class="flex items-center gap-8">
+
+<!-- LOGO -->
+<a href="#beranda" class="flex items-center">
+<img src="img/logo.png" alt="Logo HBS" style="height:70px; width:auto;">
+</a>
+
+<!-- MENU WRAPPER -->
+<div class="relative">
+
+<ul id="menu" class="flex space-x-4 text-black text-xl font-semibold uppercase tracking-wide relative">
+
+<!-- BUBBLE -->
+<span id="bubble"
+class="absolute bg-[#7A1C1C] rounded-full transition-all duration-300"></span>
+
+<li>
+<a href="#beranda" class="nav-item px-6 py-3 relative z-10">
+Beranda
+</a>
+</li>
+
+<li>
+<a href="#profil" class="nav-item px-6 py-3 relative z-10">
+Profil
+</a>
+</li>
+
+<li>
+<a href="#jadwal" class="nav-item px-6 py-3 relative z-10">
+Jadwal
+</a>
+</li>
+
+<li>
+<a href="#prestasi" class="nav-item px-6 py-3 relative z-10">
+Prestasi
+</a>
+</li>
+
+<li>
+<a href="#galeri" class="nav-item px-6 py-3 relative z-10">
+Galeri
+</a>
+</li>
+
+<li>
+<a href="#kontak" class="nav-item px-6 py-3 relative z-10">
+Kontak
+</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+
+<!-- LOGIN BUTTON -->
+<a href="login.html"
+class="bg-[#7A1C1C] text-white px-6 py-3 rounded-full text-lg font-semibold uppercase hover:bg-black transition">
+Login
+</a>
+
+</div>
+
+</nav>
+
+
+<!-- BERANDA / HERO -->
+<section id="beranda"
+class="min-h-screen flex items-center bg-cover bg-center relative"
+style="background-image: url('img/hero.png');">
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/55"></div>
+
+  <!-- Konten -->
+  <div class="relative w-full">
+    <div style="margin-left:160px; max-width:800px;" class="text-white">
+
+<h1 class="font-bold mb-3"
+style="font-size:64px; line-height:1.1;">
+WUJUDKAN IMPIAN <br>
+SEPAK BOLA ANDA <br>
+BERSAMA HBS
+</h1>
+
+<p style="font-size:22px; font-weight:600;" class="mb-8 text-gray-200">
+Bergabunglah dengan akademi terbaik untuk <br>
+mengembangkan bakat dan karakter di lapangan.
+</p>
+
+<div class="flex gap-6">
+
+<a href="daftar.html"
+style="font-size:20px; padding:16px 32px;"
+class="bg-[#7A1C1C] text-white rounded-full font-semibold uppercase hover:bg-black transition">
+Daftar Sekarang
+</a>
+
+<a href="#profil"
+style="font-size:20px; padding:16px 32px;"
+class="border border-white text-white rounded-full font-semibold uppercase hover:bg-white hover:text-black transition">
+Pelajari Program
+</a>
+
+</div>
+
+</div>
+  </div>
+</section>
+
+
+<!-- PROFIL -->
+<section id="profil"
+class="min-h-screen flex items-center bg-cover bg-center relative"
+style="background-image: url('img/bg-profil.png');">
+
+  <div class="absolute inset-0 bg-gradient-to-r from-white/80 to-white/20"></div>
+
+  <div class="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+    <div>
+      <h2 style="color:#7A1C1C; font-size:38px; font-weight:700; margin-bottom:18px;">
+        PROFIL HBS
+      </h2>
+
+      <p style="text-align: justify; color: black; line-height: 1.8; font-size: 18px;">
+        Berdiri sejak 19 Januari 1913, HBS (Houdt Braef Stant) merupakan institusi sepak bola legendaris di Surabaya yang telah menjadi pilar penting dalam sejarah panjang sepak bola nasional. Sebagai salah satu klub internal Persebaya Surabaya, HBS memiliki dedikasi tak tergoyahkan dalam pembinaan pemain usia dini dengan memadukan nilai historis yang kuat dan metodologi pelatihan modern. Nama Houdt Braef Stant yang berarti "Bertahanlah dengan Teguh" menjadi fondasi filosofi klub dalam membentuk karakter pemain yang disiplin, tangguh, dan menjunjung tinggi sportivitas di dalam maupun di luar lapangan.
+      </p>
+    </div>
+
+   <div class="relative overflow-hidden" style="height:420px;">
+
+<img src="img/profil.png"
+alt="Profil HBS"
+style="width:100%; height:100%; object-fit:contain;">
+
+</div>
+
+  </div>
+</section>
+
+<!-- JADWAL -->
+<section id="jadwal"
+class="min-h-screen pt-40 pb-16 scroll-mt-30 bg-cover bg-center relative"
+style="background-image: url('img/bg-jadwal.png');">
+
+<!-- OVERLAY -->
+<div class="absolute inset-0 bg-[#3a0101]/60"></div>
+
+<div class="relative max-w-7xl mx-auto px-6">
+
+    <!-- JADWAL LATIHAN -->
+    <div class="mb-12">
+      <h2 class="text-white text-4xl font-bold mb-6 uppercase">
+        JADWAL LATIHAN
+      </h2>
+
+      <div class="space-y-4">
+
+        <!-- LATIHAN 1 -->
+        <div class="flex items-stretch">
+          <div class="relative bg-[#f2f2f2] h-[98px] flex-1 rounded-l-[14px] overflow-hidden"
+               style="clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);">
+            <div class="h-full flex items-center justify-between px-8 pr-16">
+
+              <div class="w-[180px] flex items-center">
+                <span class="text-[#1f2d7a] font-bold text-[24px] uppercase">Senin</span>
+              </div>
+
+              <div class="flex-1 flex justify-center">
+                <span class="text-[#73798b] font-extrabold text-[34px] leading-none">
+                  08.00 - 10.00 WIB
+                </span>
+              </div>
+
+              <div class="w-[220px] flex items-center justify-center">
+                <span class="text-[#7A1C1C] font-bold text-[24px] uppercase text-center">
+                  Lapangan HBS
+                </span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="bg-[#c80d0d] w-[260px] h-[98px] rounded-r-[14px] flex items-center justify-center">
+            <span class="text-white font-extrabold text-[30px] uppercase">
+              Latihan
+            </span>
+          </div>
+        </div>
+
+        <!-- LATIHAN 2 -->
+        <div class="flex items-stretch">
+          <div class="relative bg-[#f2f2f2] h-[98px] flex-1 rounded-l-[14px] overflow-hidden"
+               style="clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);">
+            <div class="h-full flex items-center justify-between px-8 pr-16">
+
+              <div class="w-[180px] flex items-center">
+                <span class="text-[#1f2d7a] font-bold text-[24px] uppercase">Rabu</span>
+              </div>
+
+              <div class="flex-1 flex justify-center">
+                <span class="text-[#73798b] font-extrabold text-[34px] leading-none">
+                  16.00 - 18.00 WIB
+                </span>
+              </div>
+
+              <div class="w-[220px] flex items-center justify-center">
+                <span class="text-[#7A1C1C] font-bold text-[24px] uppercase text-center">
+                  Lapangan HBS
+                </span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="bg-[#c80d0d] w-[260px] h-[98px] rounded-r-[14px] flex items-center justify-center">
+            <span class="text-white font-extrabold text-[30px] uppercase">
+              Latihan
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- JADWAL PERTANDINGAN -->
+    <div>
+      <h2 class="text-white text-4xl font-bold mb-6 uppercase">
+        JADWAL PERTANDINGAN
+      </h2>
+
+      <div class="space-y-4">
+
+        <!-- MATCH 1 -->
+        <div class="flex items-stretch">
+          <div class="relative bg-[#f2f2f2] h-[98px] flex-1 rounded-l-[14px] overflow-hidden"
+               style="clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);">
+            <div class="h-full flex items-center justify-between px-6 pr-24">
+
+              <div class="w-[120px] flex flex-col items-center">
+                <img src="img/logo.png" alt="Logo HBS" class="h-[42px] object-contain mb-1">
+                <span class="text-black font-bold text-[16px] uppercase leading-none">SSB HBS</span>
+              </div>
+
+              <div class="flex-1 flex justify-center">
+                <span class="text-[#73798b] font-extrabold italic leading-none text-[64px]">
+                  VS
+                </span>
+              </div>
+
+              <div class="w-[130px] flex flex-col items-center">
+                <img src="img/lawan1.png" alt="Logo Elang" class="h-[42px] object-contain mb-1">
+                <span class="text-black font-bold text-[16px] uppercase leading-none text-center">SSB ELANG</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="bg-[#c80d0d] w-[260px] h-[98px] rounded-r-[14px] flex flex-col items-center justify-center">
+            <span class="text-white font-bold uppercase leading-none text-[18px]">17 AGUST 2026</span>
+            <span class="text-white font-extrabold leading-none mt-2 text-[34px]">
+              08.00 WIB
+            </span>
+          </div>
+        </div>
+
+        <!-- MATCH 2 -->
+        <div class="flex items-stretch">
+          <div class="relative bg-[#f2f2f2] h-[98px] flex-1 rounded-l-[14px] overflow-hidden"
+               style="clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);">
+            <div class="h-full flex items-center justify-between px-6 pr-24">
+
+              <div class="w-[120px] flex flex-col items-center">
+                <img src="img/logo.png" alt="Logo HBS" class="h-[42px] object-contain mb-1">
+                <span class="text-black font-bold text-[16px] uppercase leading-none">SSB HBS</span>
+              </div>
+
+              <div class="flex-1 flex justify-center">
+                <span class="text-[#73798b] font-extrabold italic leading-none text-[64px]">
+                  VS
+                </span>
+              </div>
+
+              <div class="w-[140px] flex flex-col items-center">
+                <img src="img/lawan2.png" alt="Logo Merpati" class="h-[42px] object-contain mb-1">
+                <span class="text-black font-bold text-[16px] uppercase leading-none text-center">SSB MERPATI</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="bg-[#c80d0d] w-[260px] h-[98px] rounded-r-[14px] flex flex-col items-center justify-center">
+            <span class="text-white font-bold uppercase leading-none text-[18px]">20 SEPT 2026</span>
+            <span class="text-white font-extrabold leading-none mt-2 text-[34px]">
+              16.00 WIB
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- STADION -->
+      <div class="mt-8 text-center">
+        <p class="text-white font-bold text-2xl">
+          STADION LICERIA RAYA
+        </p>
+      </div>
+    </div>
+
+</div>
+</section>
+
+
+<!-- PRESTASI -->
+<section id="prestasi"
+class="min-h-screen flex items-center bg-cover bg-center relative pt-40"
+style="background-image: url('img/bg-prestasi.png');">
+
+<div class="absolute inset-0 bg-black/40"></div>
+
+<div class="relative max-w-7xl mx-auto px-6 w-full">
+    <!-- Judul -->
+    <div class="text-center mb-14">
+      <h2 class="font-bold mb-4"
+          style="font-size:38px; color:#ffffff;">
+        PRESTASI PEMAIN
+      </h2>
+     
+    </div>
+
+    <!-- Card Prestasi -->
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+        
+        <div class="relative">
+          <img src="img/pemain1.png" alt="Raka Pratama" class="w-full h-80 object-cover">
+          <div class="absolute top-4 left-4 bg-[#7A1C1C] text-white px-4 py-1 rounded-full text-sm font-semibold">
+            Top Player
+          </div>
+        </div>
+
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold text-black mb-2">
+            Raka Pratama
+          </h3>
+          <p class="text-[#7A1C1C] font-semibold mb-3">
+            Penyerang
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Juara 1 Liga Persebaya U-14 2025 dan pencetak gol terbanyak di kompetisi regional Surabaya.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+        
+        <div class="relative">
+          <img src="img/pemain2.png" alt="Dimas Saputra" class="w-full h-80 object-cover">
+          <div class="absolute top-4 left-4 bg-[#7A1C1C] text-white px-4 py-1 rounded-full text-sm font-semibold">
+            Best Midfielder
+          </div>
+        </div>
+
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold text-black mb-2">
+            Dimas Saputra
+          </h3>
+          <p class="text-[#7A1C1C] font-semibold mb-3">
+            Gelandang
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+            Pemain terbaik turnamen SSB Jawa Timur 2025 dengan performa konsisten dan visi bermain yang kuat.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition duration-300">
+        
+        <div class="relative">
+          <img src="img/pemain3.png" alt="Fajar Ramadhan" class="w-full h-80 object-cover">
+          <div class="absolute top-4 left-4 bg-[#7A1C1C] text-white px-4 py-1 rounded-full text-sm font-semibold">
+            Best Defender
+          </div>
+        </div>
+
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold text-black mb-2">
+            Fajar Ramadhan
+          </h3>
+          <p class="text-[#7A1C1C] font-semibold mb-3">
+            Bek
+          </p>
+          <p class="text-gray-600 leading-relaxed">
+             Selamat dan Sukses siswa HBS yang berhasil menjadi runner-up di gelaran GSI SIDOARJO.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- GALERI -->
+<section id="galeri"
+class="min-h-screen flex items-center bg-cover bg-center relative pt-28 scroll-mt-30"
+style="background-image: url('img/bg-galeri.png');">
+
+<div class="absolute inset-0 bg-black/70"></div>
+
+<div class="relative w-full px-10">
+
+<h2 class="text-4xl font-bold text-center mb-16 text-white">
+GALERI
+</h2>
+
+<div class="grid grid-cols-4 gap-4 auto-rows-[180px]">
+
+<!-- FOTO BESAR -->
+<div class="col-span-2 row-span-2 overflow-hidden rounded-lg">
+<img src="img/galeri1.png" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+</div>
+
+<!-- FOTO -->
+<div class="overflow-hidden rounded-lg">
+<img src="img/galeri2.png" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+</div>
+
+<!-- FOTO -->
+<div class="overflow-hidden rounded-lg">
+<img src="img/galeri3.png" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+</div>
+
+<!-- FOTO MEDIUM -->
+<div class="col-span-2 overflow-hidden rounded-lg">
+<img src="img/galeri4.png" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+</div>
+
+<!-- FOTO -->
+<div class="overflow-hidden rounded-lg">
+<img src="img/galeri5.png" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+</div>
+
+<!-- FOTO MEDIUM -->
+<div class="col-span-2 overflow-hidden rounded-lg">
+<img src="img/galeri6.png" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+</div>
+
+<!-- FOTO TAMBAHAN -->
+<div class="overflow-hidden rounded-lg">
+<img src="img/galeri7.png" class="w-full h-full object-cover hover:scale-110 transition duration-300">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- KONTAK -->
+<section id="kontak"
+class="min-h-screen flex items-center bg-cover bg-center relative pt-40"
+style="background-image: url('img/bg-kontak.png');">
+
+<div class="absolute inset-0 bg-black/70"></div>
+
+<div class="relative max-w-5xl mx-auto px-6 w-full">
+
+<!-- JUDUL -->
+<div class="text-center mb-14">
+
+<h2 class="font-bold text-[#ffffff] mb-4" style="font-size:38px;">
+KONTAK KAMI
+</h2>
+
+<p class="text-white text-lg max-w-2xl mx-auto">
+Hubungi kami untuk informasi lebih lanjut 
+</p>
+
+</div>
+
+<!-- CARD -->
+<div class="grid md:grid-cols-4 gap-8">
+
+<!-- EMAIL -->
+<div class="bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-2 hover:shadow-2xl transition">
+
+<div class="w-16 h-16 mx-auto mb-5 rounded-full bg-[#7A1C1C] flex items-center justify-center">
+
+<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+<path d="M20 4H4a2 2 0 00-2 2v.01l10 6.49 10-6.49V6a2 2 0 00-2-2zm0 4.24l-7.68 4.99a1 1 0 01-1.08 0L4 8.24V18a2 2 0 002 2h12a2 2 0 002-2V8.24z"/>
+</svg>
+
+</div>
+
+<h3 class="text-xl font-bold mb-2">Email</h3>
+<p class="text-gray-600">hbsofficial@email.com</p>
+
+</div>
+
+<!-- TELEPON -->
+<div class="bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-2 hover:shadow-2xl transition">
+
+<div class="w-16 h-16 mx-auto mb-5 rounded-full bg-[#7A1C1C] flex items-center justify-center">
+
+<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+<path d="M6.62 10.79a15.72 15.72 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.85 21 3 13.15 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/>
+</svg>
+
+</div>
+
+<h3 class="text-xl font-bold mb-2">Telepon</h3>
+<p class="text-gray-600">08123456789</p>
+
+</div>
+
+<!-- INSTAGRAM -->
+<div class="bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-2 hover:shadow-2xl transition">
+
+<div class="w-16 h-16 mx-auto mb-5 rounded-full bg-[#7A1C1C] flex items-center justify-center">
+
+<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+<path d="M7.75 2C4.68 2 2 4.68 2 7.75v8.5C2 19.32 4.68 22 7.75 22h8.5C19.32 22 22 19.32 22 16.25v-8.5C22 4.68 19.32 2 16.25 2h-8.5zm0 2h8.5C18.22 4 20 5.78 20 7.75v8.5c0 1.97-1.78 3.75-3.75 3.75h-8.5C5.78 20 4 18.22 4 16.25v-8.5C4 5.78 5.78 4 7.75 4zm9.25 1.5a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
+</svg>
+
+</div>
+
+<h3 class="text-xl font-bold mb-2">Instagram</h3>
+<p class="text-gray-600">@hbs.official.3</p>
+
+</div>
+
+<!-- ALAMAT -->
+<div class="bg-white rounded-2xl shadow-lg p-8 text-center hover:-translate-y-2 hover:shadow-2xl transition">
+
+<div class="w-16 h-16 mx-auto mb-5 rounded-full bg-[#7A1C1C] flex items-center justify-center">
+
+<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+d="M3 12l9-9 9 9M4 10v10h16V10"/>
+</svg>
+
+</div>
+
+<h3 class="text-xl font-bold mb-2">Alamat</h3>
+<p class="text-gray-600">Surabaya, Jawa Timur</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white text-center py-4">
+<p>© 2026 Website SSB HBS</p>
+</footer>
+
+
+<!-- SCRIPT NAVBAR BUBBLE -->
+<script>
+
+const items = document.querySelectorAll(".nav-item");
+const bubble = document.getElementById("bubble");
+const sections = document.querySelectorAll("section");
+
+function moveBubble(el) {
+
+const rect = el.getBoundingClientRect();
+const parent = el.parentElement.parentElement.getBoundingClientRect();
+
+bubble.style.width = rect.width + "px";
+bubble.style.height = rect.height + "px";
+bubble.style.left = (rect.left - parent.left) + "px";
+bubble.style.top = (rect.top - parent.top) + "px";
+
+items.forEach(i => i.classList.remove("text-white"));
+el.classList.add("text-white");
+
+}
+
+// klik menu
+items.forEach(item => {
+item.addEventListener("click", function(){
+moveBubble(this);
+});
+});
+
+// scroll mengikuti section
+window.addEventListener("scroll", () => {
+
+let current = "";
+
+sections.forEach(section => {
+
+const sectionTop = section.offsetTop - 120;
+const sectionHeight = section.clientHeight;
+
+if (pageYOffset >= sectionTop) {
+current = section.getAttribute("id");
+}
+
+});
+
+items.forEach(item => {
+
+if (item.getAttribute("href") === "#" + current) {
+moveBubble(item);
+}
+
+});
+
+});
+
+// default posisi awal
+window.onload = () => moveBubble(items[0]);
+
+</script>
+
+</body>
+</html>
