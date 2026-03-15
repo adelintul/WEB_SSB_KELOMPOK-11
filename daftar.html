@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulir Pendaftaran SSB HBS</title>
+  <link rel="stylesheet" href="./dist/output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            maroon: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              300: '#fda4af',
+              400: '#fb7185',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+              800: '#881337',
+              900: '#4c0519'
+            }
+          },
+          boxShadow: {
+            soft: '0 20px 60px rgba(0,0,0,0.35)',
+            glow: '0 10px 30px rgba(190,18,60,0.35)',
+            glass: '0 8px 32px rgba(0,0,0,0.25)'
+          },
+          backgroundImage: {
+            stadium: "linear-gradient(rgba(10,10,10,.72), rgba(10,10,10,.8)), url('https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=1600&q=80')",
+            heroOverlay: "radial-gradient(circle at top, rgba(225,29,72,0.24), transparent 40%), linear-gradient(135deg, rgba(0,0,0,0.88), rgba(20,20,20,0.78))"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-black text-white min-h-screen selection:bg-maroon-700 selection:text-white">
+  <div class="min-h-screen bg-stadium bg-cover bg-center bg-fixed">
+    <div class="min-h-screen bg-heroOverlay">
+      <main>
+        <section id="form-card" class="relative py-10 lg:py-16">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="space-y-8 items-start">
+
+              <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-3xl sm:text-4xl font-black text-white">Formulir Pendaftaran Siswa Baru SSB HBS</h1>
+                <p class="mt-4 text-zinc-300 leading-relaxed">
+                  Silakan isi formulir pendaftaran berikut dengan data yang benar dan lengkap untuk mendaftarkan calon siswa di SSB HBS.
+                </p>
+              </div>
+
+              <div class="grid lg:grid-cols-3 gap-6">
+                <div id="benefits" class="rounded-[2rem] border border-white/10 bg-white/10 backdrop-blur-xl shadow-glass p-6">
+                  <span class="inline-flex items-center rounded-full bg-maroon-800/80 px-3 py-1 text-xs font-bold tracking-[0.2em] text-white">KENAPA HBS?</span>
+                  <h2 class="mt-4 text-2xl font-black text-white">Kenapa Harus SSB HBS?</h2>
+                  <ul class="mt-5 space-y-3 text-sm text-zinc-200">
+                    <li class="flex gap-3"><span class="mt-1.5 h-2.5 w-2.5 rounded-full bg-maroon-500"></span>Terdaftar sebagai tim internal resmi Persebaya</li>
+                    <li class="flex gap-3"><span class="mt-1.5 h-2.5 w-2.5 rounded-full bg-maroon-500"></span>Pelatih berlisensi</li>
+                    <li class="flex gap-3"><span class="mt-1.5 h-2.5 w-2.5 rounded-full bg-maroon-500"></span>Fasilitas perlengkapan sepak bola lengkap</li>
+                    <li class="flex gap-3"><span class="mt-1.5 h-2.5 w-2.5 rounded-full bg-maroon-500"></span>Lapangan berkualitas</li>
+                    <li class="flex gap-3"><span class="mt-1.5 h-2.5 w-2.5 rounded-full bg-maroon-500"></span>Mengikuti kompetisi lokal dan nasional</li>
+                    <li class="flex gap-3"><span class="mt-1.5 h-2.5 w-2.5 rounded-full bg-maroon-500"></span>Pelatihan multi-level berdasarkan usia</li>
+                    <li class="flex gap-3"><span class="mt-1.5 h-2.5 w-2.5 rounded-full bg-maroon-500"></span>Biaya terjangkau</li>
+                  </ul>
+                </div>
+
+                <div class="rounded-[2rem] border border-white/10 bg-black/40 backdrop-blur-xl shadow-glass p-6">
+                  <span class="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-bold tracking-[0.2em] text-white">PERSYARATAN UMUM</span>
+                  <h2 class="mt-4 text-2xl font-black text-white">Persyaratan Umum</h2>
+                  <p class="mt-2 text-sm text-zinc-300">Calon siswa harus memenuhi persyaratan berikut:</p>
+                  <ul class="mt-5 space-y-3 text-sm text-zinc-200">
+                    <li class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">Usia minimal 5 tahun</li>
+                    <li class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">Memiliki minat dan ketertarikan dalam olahraga sepak bola</li>
+                    <li class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">Mendapat izin dari orang tua / wali</li>
+                    <li class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">Sehat jasmani dan rohani</li>
+                    <li class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">Memiliki surat keterangan sehat dari dokter</li>
+                  </ul>
+                </div>
+
+                <div class="rounded-[2rem] border border-maroon-800/50 bg-gradient-to-br from-maroon-950/70 to-black/70 backdrop-blur-xl shadow-glass p-6">
+                  <span class="inline-flex items-center rounded-full bg-maroon-800/80 px-3 py-1 text-xs font-bold tracking-[0.2em] text-white">ADMINISTRASI</span>
+                  <h2 class="mt-4 text-2xl font-black text-white">Informasi Administrasi</h2>
+                  <p class="mt-2 text-sm text-zinc-300">Berikut informasi administrasi yang berlaku di SSB HBS:</p>
+                  <div class="mt-5 space-y-4 text-sm">
+                    <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                      <p class="text-zinc-300">Biaya pendaftaran</p>
+                      <p class="mt-1 text-2xl font-black text-emerald-400">Gratis</p>
+                    </div>
+                    <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                      <p class="text-zinc-300">Pembelian 2 stel jersey</p>
+                      <p class="mt-1 text-2xl font-black text-white">Rp 300.000</p>
+                    </div>
+                    <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                      <p class="text-zinc-300">Iuran bulanan (SPP)</p>
+                      <p class="mt-1 text-2xl font-black text-white">Rp 80.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded-[2rem] border border-white/10 bg-white/10 backdrop-blur-xl shadow-glass overflow-hidden">
+                <div class="bg-gradient-to-r from-black via-zinc-900 to-maroon-950 px-6 sm:px-8 py-8 border-b border-white/10">
+                  <p class="text-sm font-bold tracking-[0.25em] text-maroon-300">FORMULIR DATA CALON SISWA</p>
+                  <h2 class="mt-3 text-3xl sm:text-4xl font-black text-white">Lengkapi Pendaftaran Anda</h2>
+                  <p class="mt-3 text-sm text-zinc-300">Gunakan data yang benar dan lengkap agar proses verifikasi oleh admin berjalan lancar.</p>
+                </div>
+
+                <form id="registrationForm" class="p-6 sm:p-8 space-y-8">
+                  <div>
+                    <div class="flex items-center gap-3 mb-5">
+                      <div class="h-11 w-11 rounded-2xl bg-maroon-800 text-white flex items-center justify-center font-black">1</div>
+                      <div>
+                        <h3 class="text-2xl font-black text-white">Data Calon Siswa</h3>
+                        <p class="text-sm text-zinc-400">Isi identitas calon siswa dengan lengkap.</p>
+                      </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-5">
+                      <div class="sm:col-span-2">
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Nama Lengkap</label>
+                        <input type="text" required class="w-full rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-white placeholder:text-zinc-500 outline-none focus:border-maroon-600 focus:ring-4 focus:ring-maroon-900/40 transition" placeholder="Masukkan nama lengkap" />
+                      </div>
+                      <div>
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Tempat Lahir</label>
+                        <input type="text" required class="w-full rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-white placeholder:text-zinc-500 outline-none focus:border-maroon-600 focus:ring-4 focus:ring-maroon-900/40 transition" placeholder="Contoh: Surabaya" />
+                      </div>
+                      <div>
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Tanggal Lahir</label>
+                        <input type="date" required class="w-full rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-white outline-none focus:border-maroon-600 focus:ring-4 focus:ring-maroon-900/40 transition" />
+                      </div>
+                      <div>
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Jenis Kelamin</label>
+                        <select required class="w-full rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-white outline-none focus:border-maroon-600 focus:ring-4 focus:ring-maroon-900/40 transition">
+                          <option value="">Pilih jenis kelamin</option>
+                          <option>Laki-laki</option>
+                          <option>Perempuan</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Umur</label>
+                        <input type="number" min="5" required class="w-full rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-white placeholder:text-zinc-500 outline-none focus:border-maroon-600 focus:ring-4 focus:ring-maroon-900/40 transition" placeholder="Contoh: 10" />
+                      </div>
+                      <div class="sm:col-span-2">
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Alamat</label>
+                        <textarea rows="4" required class="w-full rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-white placeholder:text-zinc-500 outline-none focus:border-maroon-600 focus:ring-4 focus:ring-maroon-900/40 transition" placeholder="Masukkan alamat lengkap"></textarea>
+                      </div>
+                      <div>
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Sekolah</label>
+                        <input type="text" required class="w-full rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-white placeholder:text-zinc-500 outline-none focus:border-maroon-600 focus:ring-4 focus:ring-maroon-900/40 transition" placeholder="Nama sekolah" />
+                      </div>
+                      <div>
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Kelas</label>
+                        <input type="text" required class="w-full rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-white placeholder:text-zinc-500 outline-none focus:border-maroon-600 focus:ring-4 focus:ring-maroon-900/40 transition" placeholder="Contoh: 5 SD" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex items-center gap-3 mb-5">
+                      <div class="h-11 w-11 rounded-2xl bg-zinc-800 text-white flex items-center justify-center font-black">2</div>
+                      <div>
+                        <h3 class="text-2xl font-black text-white">Data Orang Tua / Wali</h3>
+                        <p class="text-sm text-zinc-400">Isi data yang dapat dihubungi untuk proses selanjutnya.</p>
+                      </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-5">
+                      <div class="sm:col-span-2">
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Nama Orang Tua / Wali</label>
+                        <input type="text" required class="w-full rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-white placeholder:text-zinc-500 outline-none focus:border-maroon-600 focus:ring-4 focus:ring-maroon-900/40 transition" placeholder="Masukkan nama orang tua / wali" />
+                      </div>
+                      <div>
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Nomor WhatsApp Orang Tua</label>
+                        <input type="tel" required class="w-full rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-white placeholder:text-zinc-500 outline-none focus:border-maroon-600 focus:ring-4 focus:ring-maroon-900/40 transition" placeholder="08xxxxxxxxxx" />
+                      </div>
+                      <div>
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Pekerjaan Orang Tua</label>
+                        <input type="text" required class="w-full rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-white placeholder:text-zinc-500 outline-none focus:border-maroon-600 focus:ring-4 focus:ring-maroon-900/40 transition" placeholder="Pekerjaan orang tua" />
+                      </div>
+                      <div class="sm:col-span-2">
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Alamat Orang Tua</label>
+                        <textarea rows="4" required class="w-full rounded-2xl border border-white/10 bg-black/25 px-4 py-3 text-white placeholder:text-zinc-500 outline-none focus:border-maroon-600 focus:ring-4 focus:ring-maroon-900/40 transition" placeholder="Masukkan alamat orang tua / wali"></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="flex items-center gap-3 mb-5">
+                      <div class="h-11 w-11 rounded-2xl bg-maroon-700 text-white flex items-center justify-center font-black">3</div>
+                      <div>
+                        <h3 class="text-2xl font-black text-white">Upload Dokumen</h3>
+                        <p class="text-sm text-zinc-400">Silakan unggah dokumen yang dibutuhkan.</p>
+                      </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-5">
+                      <div>
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Upload Akta Kelahiran</label>
+                        <input type="file" class="w-full rounded-2xl border border-dashed border-white/15 bg-black/25 px-3 py-2 text-zinc-300 file:mr-4 file:border-0 file:bg-maroon-800 file:text-white file:px-4 file:py-3 file:rounded-l-2xl" />
+                      </div>
+                      <div>
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Upload Kartu Keluarga</label>
+                        <input type="file" class="w-full rounded-2xl border border-dashed border-white/15 bg-black/25 px-3 py-2 text-zinc-300 file:mr-4 file:border-0 file:bg-maroon-800 file:text-white file:px-4 file:py-3 file:rounded-l-2xl" />
+                      </div>
+                      <div>
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Upload Ijazah terakhir</label>
+                        <input type="file" class="w-full rounded-2xl border border-dashed border-white/15 bg-black/25 px-3 py-2 text-zinc-300 file:mr-4 file:border-0 file:bg-maroon-800 file:text-white file:px-4 file:py-3 file:rounded-l-2xl" />
+                      </div>
+                      <div>
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Upload Pas Foto 3x4</label>
+                        <input type="file" class="w-full rounded-2xl border border-dashed border-white/15 bg-black/25 px-3 py-2 text-zinc-300 file:mr-4 file:border-0 file:bg-maroon-800 file:text-white file:px-4 file:py-3 file:rounded-l-2xl" />
+                      </div>
+                      <div>
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Upload Surat Keterangan Sehat</label>
+                        <input type="file" class="w-full rounded-2xl border border-dashed border-white/15 bg-black/25 px-3 py-2 text-zinc-300 file:mr-4 file:border-0 file:bg-maroon-800 file:text-white file:px-4 file:py-3 file:rounded-l-2xl" />
+                      </div>
+                      <div>
+                        <label class="block text-sm font-semibold text-zinc-200 mb-2">Upload Dokumen tambahan (jika ada)</label>
+                        <input type="file" class="w-full rounded-2xl border border-dashed border-white/15 bg-black/25 px-3 py-2 text-zinc-300 file:mr-4 file:border-0 file:bg-zinc-800 file:text-white file:px-4 file:py-3 file:rounded-l-2xl" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="rounded-[2rem] border border-white/10 bg-black/30 p-6">
+                    <h3 class="text-2xl font-black text-white">Pernyataan Kesediaan</h3>
+                    <p class="mt-3 text-sm leading-relaxed text-zinc-300">Dengan ini saya menyatakan bahwa seluruh data yang saya isi pada formulir pendaftaran ini adalah benar dan dapat dipertanggungjawabkan.</p>
+                    <p class="mt-4 text-sm font-semibold text-white">Saya juga menyatakan kesediaan untuk:</p>
+                    <ul class="mt-3 space-y-2 text-sm text-zinc-300">
+                      <li>• Mematuhi seluruh peraturan dan tata tertib yang berlaku di SSB HBS</li>
+                      <li>• Mengikuti program latihan yang telah ditetapkan oleh pelatih dan manajemen</li>
+                      <li>• Menjaga sikap sportivitas dan nama baik SSB HBS</li>
+                      <li>• Memenuhi kewajiban administrasi dan pembayaran, yaitu:</li>
+                      <li class="ml-4">- Pembelian 2 stel jersey sebesar Rp 300.000</li>
+                      <li class="ml-4">- Iuran bulanan (SPP) sebesar Rp 80.000</li>
+                    </ul>
+
+                    <label class="mt-5 flex items-start gap-3 rounded-2xl border border-maroon-800/40 bg-maroon-950/20 p-4 cursor-pointer">
+                      <input id="agreement" type="checkbox" required class="mt-1 h-5 w-5 rounded border-white/20 bg-transparent text-maroon-700 focus:ring-maroon-700" />
+                      <span class="text-sm text-zinc-200">Saya menyatakan telah membaca, memahami, dan bersedia mematuhi seluruh peraturan serta kewajiban yang berlaku di SSB HBS.</span>
+                    </label>
+                    <p class="mt-3 text-xs text-zinc-500">Catatan: Dengan mencentang pernyataan ini, Anda dianggap telah memahami dan menyetujui seluruh ketentuan yang berlaku di SSB HBS.</p>
+                  </div>
+
+                  <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2">
+                    <div>
+                      <p class="text-sm font-bold tracking-[0.2em] text-maroon-300">SUBMIT PENDAFTARAN</p>
+                      <p class="mt-1 text-sm text-zinc-400">Klik tombol di samping untuk mengirim data pendaftaran.</p>
+                    </div>
+                    <button type="submit" class="inline-flex items-center justify-center rounded-full bg-[#7A1C1C] hover:bg-maroon-700 px-8 py-4 text-white font-black shadow-glow transition-transform">
+                      Kirim Pendaftaran
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div id="successMessage" class="hidden mt-8 rounded-[2rem] border border-emerald-500/30 bg-white/10 backdrop-blur-xl shadow-glass overflow-hidden">
+                  <div class="bg-gradient-to-r from-emerald-600 to-emerald-500 px-6 py-5 text-white">
+                    <h3 class="text-2xl font-black">Pendaftaran Berhasil!</h3>
+                  </div>
+                  <div class="p-6 sm:p-8">
+                    <p class="text-zinc-200 leading-relaxed">Terima kasih, data pendaftaran Anda telah berhasil dikirim.</p>
+                    <p class="mt-2 text-zinc-200 leading-relaxed">Admin SSB HBS akan menghubungi Anda melalui WhatsApp untuk proses selanjutnya.</p>
+                    <p class="mt-4 text-zinc-300 leading-relaxed">Untuk mendapatkan informasi terbaru mengenai latihan dan kegiatan SSB, silakan bergabung ke grup pendaftar melalui tombol berikut:</p>
+                    <div class="mt-6">
+                      <a href="#" class="inline-flex items-center justify-center rounded-full bg-zinc-100 px-6 py-3 text-zinc-950 font-bold hover:bg-white transition">
+                        Gabung Grup Pendaftar SSB HBS
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('registrationForm');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      successMessage.classList.remove('hidden');
+      successMessage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      form.reset();
+    });
+  </script>
+</body>
+</html>
